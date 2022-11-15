@@ -1,0 +1,20 @@
+{
+    "Description": "Mapping of CVE mitigation categories to regular expressions",
+    "Version": "v1",
+    "Mapping": [
+        {"category":"reconfiguration","re1":"default|ssh","foundIn":"Synopsis"  },
+        {"category":"upgrade","re1":"update||up-to-date","foundIn":"Synopsis"  },
+        {"category":"isolate","re1":"disable","foundIn":"Description"  },
+        {"category":"upgrade","re1":"upgrade","foundIn":"Solution"	},
+        {"category":"re1place","re1":"(u|U)se.*instead","foundIn":"Solution"  },
+        {"category":"upgrade","re1":"version","foundIn":"Name"  },
+        {"category":"upgrade","re1":"is missing.*update","foundIn":"Synopsis"  },
+        {"category":"patch","re1":"patch","foundIn":"Solution"  },
+        {"category":"reconfiguration","re1":"enable","foundIn":"Solution"  },
+        {"category":"reconfiguration","re1":"review","foundIn":"Solution"  },
+        {"category":"reconfiguration","re1":"modify","foundIn":"Solution"  },
+        {"category":"reconfiguration","re1":"remove|unsupported","foundIn":"Synopsis"  },
+        {"category":"FW config","re1":"filter","foundIn":"Solution"  },				
+        {"category":"FW config","re1":" review the firewall rules","foundIn":"Solution"  }
+    ]
+}
